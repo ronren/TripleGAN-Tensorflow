@@ -12,7 +12,7 @@ class TripleGAN(object) :
         self.log_dir = log_dir
         self.epoch = epoch
         self.batch_size = batch_size
-        self.unlabelled_batch_size = unlabel_batch_size
+        self.unlabelled_batch_size = unlabel_batch_size // 无标签数据样本数量
         self.test_batch_size = 1000
         self.model_name = "TripleGAN"     # name for checkpoint
         if self.dataset_name == 'cifar10' :
